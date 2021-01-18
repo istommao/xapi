@@ -11,13 +11,27 @@ pip install xtapi
 
 ```python
 # main.py
-from xtapi.main import MainApp
+from xtapi import MainApp
 
 app = MainApp()
 
 if __name__ == '__main__':
     app.run(name='main:app', reload=True)
 ```
+
+## first api
+
+```python
+from xtapi import MainApp
+
+app = MainApp()
+
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World"}
+```
+
 
 **Run server**
 

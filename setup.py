@@ -8,7 +8,7 @@ INSTALL_REQUIRES = [
     "uvicorn>=0.12.2",
     "aiofiles>=0.5.0"
 ]
-VERSION = '0.1.0'
+VERSION = '0.1.1'
 
 setup(
     name='xtapi',

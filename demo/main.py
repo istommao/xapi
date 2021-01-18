@@ -1,5 +1,5 @@
 """main."""
-from xtapi.main import MainApp
+from xtapi import MainApp
 
 app = MainApp()
 # app.mount('/static', 'static', name='static')
