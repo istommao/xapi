@@ -17,3 +17,7 @@ class MainApp(FastAPI):
         """register routers"""
         for router, config in router_config:
             self.include_router(router, **config)
+
+    def register_exception_handlers(self, handlers_config: list):
+        for code, handler in handlers_config:
+            self.add_exception_handler(code, handler)

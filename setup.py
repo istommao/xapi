@@ -8,7 +8,7 @@ INSTALL_REQUIRES = [
     "uvicorn>=0.12.2",
     "aiofiles>=0.5.0"
 ]
-VERSION = '0.1.1'
+VERSION = '0.1.2'
 
 setup(
     name='xtapi',
@@ -22,5 +22,9 @@ setup(
     include_package_data=True,
     zip_safe=False,
     url='https://github.com/istommao/xtapi',
-    keywords='xtapi is a web api base on FastAPI'
+    keywords='xtapi is a web api base on FastAPI',
+    entry_points="""
+    [console_scripts]
+    xtapi=xtapi.script:main
+    """
 )
